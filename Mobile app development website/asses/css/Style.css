@@ -1,0 +1,131 @@
+body {
+    /* отступ я пока офнул */
+    margin: 0;
+    /* Это я тип включил шрифт */
+    font-family: 'Poppins', sans-serif;
+    /* Это я его размер указал */
+    font-size: 15px;
+    /* Межстрочный интервал */
+    line-height: 1.6;
+    /* Цвет надписи */
+    color: black;
+    background-color: #f1f1f1;
+}
+
+*,
+*::before,
+*::after{
+    /* изменяем алгоритм расчета ширины и высоты элемента. */
+    /* делаю как в гайде */
+    box-sizing: border-box;
+}
+
+/*сбрасываем у всех заголовков margin*/
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.container{
+    /* размер в процехах */
+    width: 100%;
+    /* макс размер в px */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*интро(ну или типа первый фулл-скрин слайд сайта)*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*указываем что картинка будет по всей длине,
+    на пол экрана*/
+    width: 100%;
+    height: 100vh;
+    /*прописываем адрес к картинке*/
+    background: url(../images/Intro_right.jpg) right no-repeat;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    text-align: left;
+}
+
+.intro__inner2{
+    width: 30%;
+    max-width: 880px;
+    padding-right: 100px;
+    padding-top: 300px;
+    margin: 0 auto;
+}
+
+/*мейн надпись слева*/
+.intro__title{
+    font-size: 100px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+}
+
+.intro__title2{
+    font-family: 'Hubballi', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1;
+}
+
+/*шапка*/
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+/*объединяем header__logo+nav для того
+чтобы они на одной линии были */
+.header__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__image__menu{
+    width: 50px;
+    height: 50px;
+    background: url(../images/menu.jpg) left no-repeat;
+}
+
+.header__image__logo{
+    width: 60px;
+    height: 60px;
+    background: url(../images/Logo.jpg) right no-repeat;
+}
+
+/*навигации рядом с лого*/
+.nav{
+    font-style: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: gray;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover{
+    color:#8a2be2;
+}
