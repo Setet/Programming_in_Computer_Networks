@@ -34,7 +34,7 @@
     transition: max-height 0.2s ease-out;
 }
 
-/*Задание № 1*/
+/* Задание № 1 */
 .data_things{
     color: #101136;
     display: flex;
@@ -51,9 +51,9 @@ body{
  font-family: sans-serif; 
 }
 
-/*Задание № 2*/
+/* Задание № 2*/
 
-/* месяцы и годы */
+/* месяцы и года */
 #month-calendar{
     width: 100%;
 }
@@ -114,7 +114,7 @@ body{
     text-align: center;
 }
 
-/*Для выходных над датами*/
+/* для выходных над датами */
 .holidays {
     color: #ff0000;
 }
@@ -132,7 +132,7 @@ body{
     height: 14rem;
 }
 
-/*Для выходных в самом календаре*/
+/* для выходных в самом календаре */
 .days li:nth-child(7n+6){
     color: #ff0000;
 }
@@ -157,15 +157,15 @@ body{
     font-weight: 700;
 }
 
-/*Задание № 3*/
+/* Задание № 3 */
 .dom_elem{
     color: #000000;
     display: flex;
     justify-content: center;
 }
 
-/*Задание № 4*/
-.rnd__block{
+/* Задание № 4 */
+.img__block{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -174,7 +174,7 @@ body{
     position: static;
 }
 
-.rnd__img1{
+.img1{
     width: 50%;
     height: 300px;
     object-fit: cover;
@@ -182,7 +182,7 @@ body{
     border-right: 1px solid violet;
 }
 
-.rnd__img2{
+.img2{
     width: 50%;
     height: 300px;
     object-fit: cover;
@@ -190,7 +190,7 @@ body{
     border-right: 1px solid violet;
 }
 
-.rnd__img3{
+.img3{
     width: 50%;
     height: 300px;
     object-fit: cover;
@@ -198,7 +198,7 @@ body{
     border-right: 1px solid violet;
 }
 
-.rnd__img4{
+.img4{
     width: 50%;
     height: 300px;
     object-fit: cover;
@@ -206,9 +206,11 @@ body{
     border-right: 1px solid violet;
 }
 
-/*Задание № 5*/
+/* Задание № 5 */
 
-/*Задание № 6*/
+
+
+/* Задание № 6 */
 .event{
     display: flex;
     flex-wrap: wrap;
@@ -226,4 +228,14 @@ body{
 
 .hidden:hover{
     visibility: collapse;
-  }
+}
+
+/* Задание № 7 */
+ul li {
+    list-style: none;
+}
+  
+.sweet__list span {
+    cursor: pointer;
+    animation: showBlock 2s linear forwards;
+}
