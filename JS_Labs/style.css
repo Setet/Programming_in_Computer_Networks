@@ -123,7 +123,7 @@ body{
 .days{
     margin: 0;
     padding: 1rem 0;
-    background-color: black;
+    background-color: white;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -239,3 +239,48 @@ ul li {
     cursor: pointer;
     animation: showBlock 2s linear forwards;
 }
+
+/* Задание № 8 */
+.hidden_1{
+    color: transparent;
+    animation: hideBlock 10s linear forwards;
+    
+}
+
+.hidden_1:hover{
+    opacity: 0;
+}
+
+@keyframes hideBlock {
+    100% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+  }
+
+.shown{
+    animation: showBlock 10s linear forwards;
+}
+.shown:hover{
+    opacity: 0;
+}
+
+.quote{
+    color:rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Задание № 9-10 */
