@@ -1,11 +1,10 @@
 function rndShow(){
     var random = Math.floor(Math.random()*4);
-    //alert(random);
 
-    let img1 = document.querySelector('.rnd__img1');
-    let img2 = document.querySelector('.rnd__img2');
-    let img3 = document.querySelector('.rnd__img3');
-    let img4 = document.querySelector('.rnd__img4');
+    let img1 = document.querySelector('.img1');
+    let img2 = document.querySelector('.img2');
+    let img3 = document.querySelector('.img3');
+    let img4 = document.querySelector('.img4');
 
     img1.innerHTML = '<img src="./pictures/Gachi_1.gif" alt="Gachi_1" width="50%"/>';
     img2.innerHTML = '<img src="./pictures/Gachi_2.gif" alt="Gachi_2" width="50%"/>';
